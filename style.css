@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    font-size: 100%;
+    background-color: #FFFBFF;
+    font-family: 'Quicksand', 'Helvetica', sans-serif;
+    color: #3B3937;
+        height: 100vh;
+}
+
+@media screen and (max-width:1024px) {
+    body {
+        font-size: 200%;
+    }
+}
+
+#main-wrapper {
+    width: auto;
+    margin: 0 5rem 0 5rem;
+
+}
+
+@media screen and (max-width:1024px)
+{
+    #banner {
+        display: none;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        font-weight: bold;
+    }
+    section {
+        flex-direction: column;
+    }
+    aside {
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer div {
+        text-align: center;
+    }
+    section {
+        text-align: center;
+    }
+    #publications {
+        margin: 25px 50px 0px 50px;
+    }
+    #nos-photos-wrapper {
+        margin: 5px 50px 0px 50px;
+    }
+    #personnages {
+        margin: 5px 50px 0px 50px;
+    }
+    }
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header h1{
+    font-family:'Pacifico', cursive;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 0 0 0 1rem;
+    color: #05668D;
+}
+
+
+header h2 {
+    text-shadow: #808080 1px 0 10px;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#logo img {
+    width: 15% ;
+    height: auto;
+}
+
+#titre-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Menu de navigation*/
+
+nav {
+    font-weight: 500;
+    display: flex;
+    font-size: 1.1em;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:#333333;
+}
+
+@media screen and (max-width:1024px) {
+    nav ul li a{
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: #ff7241;
+    }
+}
+
+nav ul li a:hover {
+    color: #05668D;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*Banniere*/
+
+#banner {
+    box-shadow: 0px 4px 4px black;
+    border-radius: 5px 5px 5px 5px;
+    background-image: url(images/banner3.jpg);
+    background-repeat: no-repeat;
+    width: auto;
+    height: 13rem;
+    position: relative;
+}
+
+#banner-description {
+    position: absolute;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 70%;
+    height: 25%;
+    color: #ffffff;
+    width:100%;
+    border-radius: 5px 0px 5px 5px;
+    font-size: 1em;
+}
+
+.banner-title {
+    margin-left: 1rem;
+}
+
+#banner-description a {
+    color:#ffffff;
+}
+
+.bouton {
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    border: #000000;
+    background-color:#9A031E;
+    width: 10%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*Corps*/
+.article {
+    display: flex;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: baseline;
+}
+
+.article h1 {
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+
+.article, aside {
+    text-align: justify;
+}
+
+#photo-auteur {
+    text-align: center;
+}
+
+article {
+    margin-right: 1rem;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width:1024px) {
+    article {
+        line-height: 2.2em;
+    }
+}
+
+.separateur{
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .separateur{
+        display: block;
+    }
+}
+
+aside {
+    position: relative;
+    background-color:#0c5f83;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 0.9em;
+}
+
+.aside-photo-auteur {
+    width: 30%;
+    height: auto;
+    border-radius: 25px;
+}
+
+aside h1 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.reseaux-sociaux {
+    display: flex;
+    align-items: space-between;
+}
+
+.aside-logo-rs {
+    width: 40%;
+}
+
+
+/*Footer*/
+
+.categories {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.categories h1 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+#publications{
+    width: 100%;
+}
+
+.publications-lien {
+    color: #3B3937;
+}
+
+.publications-date{
+    font-style: italic;
+    font-size:0.8em;
+}
+
+.nos-photos-wrapper{
+    width: 100%;
+}
+
+
+.lieu-photo{
+    width: 15%;
+    height: auto;
+}
+
+@media screen and (max-width:1024px) {
+    .lieu-photo {
+        width: 50%;
+        height: auto;
+    }
+}
+
+#personnages-wrapper{
+    width: 100%;
+}
+
+#personnages {
+    display: flex;;
+}
+
+#personnages ul {
+    width: 100%;
+}
+
+#personnages ul li {
+    text-align: left;
+    font-weight: 500;
+    list-style-image:url('images/japanese-man.png');
+}
+
+footer {
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+    width: 100%;
+    min-height: 5%;
+    background-color: #0c5f83;
+}
+
+.copyright-text{
+    text-align: center;
+    font-size: 1em;
+    padding: 1rem;
+    color: #FFFBFF;
+}
+
